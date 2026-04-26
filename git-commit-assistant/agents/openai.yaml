@@ -1,0 +1,4 @@
+interface:
+  display_name: "Git Commit Assistant"
+  short_description: "Create reviewed local commits from staged changes"
+  default_prompt: "Use $git-commit-assistant to review staged changes, propose a commit message, and create a local commit without pushing."

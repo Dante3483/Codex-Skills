@@ -1,0 +1,4 @@
+interface:
+  display_name: "Guided Skill Creator"
+  short_description: "Build new Codex skills through a guided chat workflow."
+  default_prompt: "Guide me step by step to design and create a new Codex skill."

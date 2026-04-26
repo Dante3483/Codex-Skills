@@ -1,0 +1,4 @@
+interface:
+  display_name: "Unity Solution Planner"
+  short_description: "Create chat-only Unity/game solution plans."
+  default_prompt: "Use $unity-solution-planner to create a chat-only Unity/game solution plan. Normalize subtasks carefully, ask approval for the subtask list once, read only the smallest useful project context, then walk subtasks one by one using concise Subtask N/M solutions, optional Code sections, and numbered chat approval questions. Do not edit files or invent unsupported project details."

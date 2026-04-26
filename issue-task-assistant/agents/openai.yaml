@@ -1,0 +1,4 @@
+interface:
+  display_name: "Issue Task Assistant"
+  short_description: "Draft project issues and task specs"
+  default_prompt: "Use $issue-task-assistant to clarify a task, optionally inspect the project, and produce an approved final issue."
