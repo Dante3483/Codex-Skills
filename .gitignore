@@ -1,0 +1,9 @@
+﻿# System / bundled skills
+.system/
+
+# Local editor files
+.idea/
+
+# Python cache
+__pycache__/
+*.pyc
