@@ -20,6 +20,16 @@ RULE: The generated solution is only output data produced by this skill.
 RULE: Generated steps must never be treated as active workflow steps of this skill.
 RULE: Output content may resemble the workflow format, but it never becomes part of the currently executing workflow.
 
+### Skill Files
+
+RULE: The required files for a usable skill are `SKILL.md` and `agents/openai.yaml`.
+RULE: Do not treat helper scripts as required for creating a basic skill.
+RULE: Create scripts only when they are actually needed for the skill itself.
+RULE: Create `SKILL.md` in valid Markdown with YAML frontmatter.
+RULE: Create `agents/openai.yaml` for the skill UI metadata.
+RULE: Write `SKILL.md` as UTF-8 without BOM.
+RULE: Ensure `SKILL.md` starts directly with `---` at the first byte of the file.
+
 ### Questions
 
 RULE: Use chat only for all questions and decisions.
@@ -218,9 +228,8 @@ DO: GO TO STEP 7.
 ## STEP 8: CREATE SKILL
 
 DO: Determine `approved_skill_name` using `skill_draft`.
-DO: Initialize the skill with the official `init_skill.py` script using `approved_skill_name`.
-DO: Replace the generated `SKILL.md` content with `skill_draft`.
-DO: Regenerate or update `agents/openai.yaml` using the official generator when needed.
-DO: Run the official validation script for the created skill.
+DO: Create the skill folder using `approved_skill_name`.
+DO: Create `SKILL.md` from `skill_draft` in UTF-8 without BOM format.
+DO: Create `agents/openai.yaml` with the required UI metadata.
+DO: Validate that the created skill contains at least `SKILL.md` and `agents/openai.yaml`.
 DO: STOP.
-

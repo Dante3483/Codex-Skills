@@ -1,0 +1,4 @@
+interface:
+  display_name: "Unity UI Builder Helper"
+  short_description: "Build clean Unity UXML and USS step by step."
+  default_prompt: "Help create clean UXML and USS for Unity UI Toolkit and UI Builder."
