@@ -139,7 +139,7 @@ RULE: Introduce a new pattern only if it clearly improves the code and can be ap
 Examples:
 - Good: keep a local file-role naming scheme if it is already used consistently across the project.
 - Bad: replace a stable local pattern with a textbook one just because it looks more universal.
-- Good: adapt improvements to the project’s existing structure instead of forcing an unrelated structure onto it.
+- Good: adapt improvements to the project's existing structure instead of forcing an unrelated structure onto it.
 
 ## VARIABLES
 
