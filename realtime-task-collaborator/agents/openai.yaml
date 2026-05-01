@@ -1,0 +1,4 @@
+interface:
+  display_name: "Realtime Task Collaborator"
+  short_description: "Clarify, split, and execute tasks together"
+  default_prompt: "Use $realtime-task-collaborator to clarify a task, approve a task list, and work through tasks one by one with me."
