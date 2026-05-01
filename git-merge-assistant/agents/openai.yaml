@@ -1,0 +1,4 @@
+interface:
+  display_name: "Git Merge Assistant"
+  short_description: "Merge one local branch into another with the right message"
+  default_prompt: "Use $git-merge-assistant to ask which branch to merge into which branch, then create the local merge commit with the correct message template."
