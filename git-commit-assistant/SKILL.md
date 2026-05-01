@@ -24,10 +24,18 @@ RULE: Do not use Conventional Commit prefixes like `feat:`, `fix:`, `chore:`, or
 RULE: For non-trivial commits, use 2-5 meaningful bullet points.
 RULE: Omit the body for tiny obvious commits.
 RULE: Omit non-essential information and mention config, package, generated, asset, or project setting changes only when they materially affect the change.
+RULE: Inspect the full git status before building a commit proposal.
+RULE: Treat added, modified, deleted, and renamed files as equally important sources for the commit proposal.
+RULE: Do not build the proposal around added files only.
+RULE: If a file was deleted or renamed as part of the change, represent that explicitly in the proposal.
+RULE: Include all approved file operations in the staged set before creating the commit.
+RULE: Verify that the staged set matches the approved proposal before creating the commit.
 
 ### Safety Rules
 
 RULE: Do not push to remote under any condition.
+RULE: Do not silently omit modified, deleted, or renamed files that belong to the approved change.
+RULE: Do not include unrelated files in the commit just to make the staging step easier.
 
 ## COMMIT PROPOSAL
 
@@ -42,6 +50,15 @@ Commit message:
 
 Files to add:
 - path/to/file
+
+Files to modify:
+- path/to/file
+
+Files to delete:
+- path/to/file
+
+Files to rename:
+- old/path -> new/path
 
 Excluded files:
 - path/to/other-file
@@ -91,6 +108,7 @@ DO: GO TO STEP 3.
 ## STEP 4: CREATE LOCAL COMMIT
 
 DO: Generate `final_commit_message` from `commit_proposal`.
+DO: Ensure the staged files match the approved proposal, including approved additions, modifications, deletions, and renames.
 DO: Use `final_commit_message` to create the local commit.
 
 IF the local commit was not created successfully:
