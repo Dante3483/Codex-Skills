@@ -22,6 +22,7 @@ RULE: Keep each commit body bullet to no more than 2 sentences.
 RULE: Do not mention Unity service files such as `.meta` files unless they are the actual subject of the change.
 RULE: Do not use Conventional Commit prefixes like `feat:`, `fix:`, `chore:`, or `refactor:` unless requested.
 RULE: For non-trivial commits, use 2-5 meaningful bullet points.
+RULE: Allow more than 4 commit body bullets when useful, but avoid saturation and duplication and keep each bullet focused on one distinct theme.
 RULE: Omit the body for tiny obvious commits.
 RULE: Omit non-essential information and mention config, package, generated, asset, or project setting changes only when they materially affect the change.
 RULE: Inspect the full git status before building a commit proposal.

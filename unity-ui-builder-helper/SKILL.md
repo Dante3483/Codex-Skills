@@ -29,6 +29,7 @@ RULE: Inspect the existing project style before editing `UXML` or `USS`.
 RULE: Match the project current naming, hierarchy, and selector style unless there is a strong reason not to.
 RULE: Prefer adapting to the existing project style over introducing a new style system.
 RULE: If the user or project already demonstrates a simpler working pattern, prefer that pattern over a more theoretical structure.
+RULE: Match the project's existing Unity editor window visual style closely instead of inventing a new visual language.
 
 ### Hierarchy
 
@@ -96,6 +97,7 @@ RULE: Fix structural causes before adding cosmetic style patches.
 RULE: If the user manually removes something and nothing breaks, treat that as strong evidence that it was unnecessary.
 RULE: Prefer proven simplification over theoretical justification.
 RULE: Do not keep containers, classes, or styles only for possible future use.
+RULE: When the user explicitly splits responsibilities, respect that ownership split and edit only the assigned asset type.
 
 ### Final Cleanup
 

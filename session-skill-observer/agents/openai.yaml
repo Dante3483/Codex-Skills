@@ -1,0 +1,4 @@
+interface:
+  display_name: "Session Skill Observer"
+  short_description: "Capture reusable rules from user corrections."
+  default_prompt: "Use $session-skill-observer to capture reusable rules from my corrections during this session."

@@ -26,6 +26,7 @@ RULE: Keep the description short.
 RULE: Keep goals outcome-focused.
 RULE: Keep tasks implementation-focused.
 RULE: Keep acceptance criteria testable.
+RULE: When outputting the final issue in the second markdown block, omit the `Title:` line and keep only the issue body sections.
 
 ## TEMPLATES
 
@@ -203,6 +204,7 @@ DO: GO TO STEP 6.
 ## STEP 7: OUTPUT FINAL ISSUE
 
 DO: Determine `issue_title` using `final_issue`.
+DO: Generate `final_issue_body` from `final_issue` without the `Title:` line.
 DO: Output exactly this block:
 
 ```md
@@ -212,7 +214,7 @@ DO: Output exactly this block:
 DO: Output exactly this block:
 
 ```md
-<final_issue> in the `ISSUE_TEMPLATE` format
+<final_issue_body>
 ```
 
 DO: STOP.
