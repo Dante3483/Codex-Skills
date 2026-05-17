@@ -14,6 +14,11 @@ RULE: Work on only one `current_task` at a time.
 RULE: Reuse and update stored variables explicitly.
 RULE: Treat a numeric reply as the selected option when a step asks a numbered question.
 RULE: Treat any non-numeric reply as clarification or revision comments for the current step.
+RULE: Break implementation work into a practical step-by-step algorithm with moderate detail, using numbered substeps such as `1.1` and `1.2` when useful.
+RULE: After the discussion phase, move into design and coding work by showing the proposed code in chat first and applying file changes only after the user explicitly approves.
+RULE: In step-by-step implementation mode, discuss and propose code only for the current task step without jumping ahead to later parts of the workflow.
+RULE: When presenting comparable options, use a numbered list and finish with a concise recommendation in the form `I would choose ...`.
+RULE: During implementation discussion, show only the relevant changed fragment instead of rewriting the whole file unless broader context is necessary.
 
 ## IMPLEMENTATION RULES
 
@@ -62,6 +67,7 @@ RULE: Do not add extra naming words unless they improve understanding.
 RULE: Avoid vague names such as `Other`, `Misc`, `Helper`, or `Stuff` unless the role is still explicit from context.
 RULE: Keep naming consistent across files, methods, helpers, and fields.
 RULE: Respect established local naming conventions when they are already consistent.
+RULE: Prefer inverted conditionals with early returns when they improve readability and keep the main path flatter.
 
 Examples:
 - Good: `RefreshHeader`, `LoadItems`, `FindMatches`, `HasSelection`.

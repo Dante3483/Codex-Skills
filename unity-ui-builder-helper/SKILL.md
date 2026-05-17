@@ -57,6 +57,7 @@ RULE: Name elements by role in the interface.
 RULE: Prefer names like `global-search-row`, `entries-filter-row`, `details-panel`, `stores-empty-label`, `categories-shell`.
 RULE: Avoid vague names like `wrapper`, `holder`, `container`, or `field-label` when a more specific name is possible.
 RULE: Keep semantic names even when styles are shared.
+RULE: For local UXML and USS structure, prefer clean role-based names such as `root`, `header`, `body`, `title`, and `select-button` instead of repeating the full component prefix on every element.
 RULE: Do not rename semantically different elements into one generic class name only to merge styles.
 
 Example:

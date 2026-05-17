@@ -69,6 +69,7 @@ Do not capture:
 - temporary instructions with no reuse value
 - emotional reactions without an actionable rule
 - duplicate entries unless the new message raises confidence or clarifies scope
+- ordinary implementation or design revisions that do not indicate incorrect or problematic skill behavior
 
 ## Observer Pass
 

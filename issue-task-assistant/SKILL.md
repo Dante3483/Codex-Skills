@@ -25,6 +25,7 @@ RULE: Prefer title verbs like `Implement`, `Add`, `Fix`, `Refactor`, `Improve`, 
 RULE: Keep the description short.
 RULE: Keep goals outcome-focused.
 RULE: Keep tasks implementation-focused.
+RULE: Write tasks as a clear step-by-step sequence from the current state to the intended result.
 RULE: Keep acceptance criteria testable.
 RULE: When outputting the final issue in the second markdown block, omit the `Title:` line and keep only the issue body sections.
 
